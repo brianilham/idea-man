@@ -82,7 +82,7 @@ CREATE INDEX IF NOT EXISTS idx_ideas_created_at ON public.ideas(created_at DESC)
 
 ## 5. UI & Design System (ElevenLabs Warm Cream Editorial)
 
-Frontend mengadopsi standar visual **Warm Cream Editorial** mengacu pada [`ElevenLabs-DESIGN.md`](./ElevenLabs-DESIGN.md) dan prototype final ([`prototype.html`](./prototype.html)):
+Frontend mengadopsi standar visual **Warm Cream Editorial** mengacu pada [`DESIGN.md`](./DESIGN.md) dan prototype final ([`prototype.html`](./prototype.html)):
 
 ### A. Design Tokens & Styling
 - **Canvas / Background**: Eggshell `#fdfcfc` (warm paper-like).

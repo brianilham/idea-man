@@ -15,7 +15,7 @@ Folder kerja proyek berada di:
 
 1. **Ticket 01 (Frontend)**: [`01-frontend-dashboard-ui.md`](./.scratch/idea-man/issues/01-frontend-dashboard-ui.md)
    - Status: **Completed (Done)**
-   - Desain Patokan: [`prototype.html`](./prototype.html) (Variant D: Editorial Spotlight) & [`ElevenLabs-DESIGN.md`](./ElevenLabs-DESIGN.md).
+   - Desain Patokan: [`prototype.html`](./prototype.html) (Variant D: Editorial Spotlight) & [`DESIGN.md`](./DESIGN.md).
    - Hasil: Next.js (App Router) + Tailwind CSS tokens ElevenLabs, Hero section asimetris dengan Search Bar terintegrasi, Spotlight Carousel (3 slide, auto-swipe 5s, navigasi tombol kiri-kanan), Discovered Opportunities Grid (3 kolom) dengan tombol Detail ↗, sistem Upvote & Bookmark lokal (localStorage), serta modal dialog Detail Blueprint & Scan Mining.
 2. **Ticket 02 (Database)**: [`02-database-postgresql-setup.md`](./.scratch/idea-man/issues/02-database-postgresql-setup.md)
    - Status: **Completed (Done)**

@@ -23,6 +23,10 @@ out/
 */tsconfig.tsbuildinfo
 next-env.d.ts
 
+# IDE / plugin cache
+.impeccable/
+*/.impeccable/
+
 # OS & misc
 .DS_Store
 Thumbs.db

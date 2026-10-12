@@ -31,3 +31,8 @@ next-env.d.ts
 .DS_Store
 Thumbs.db
 *.log
+
+# Scratch & local files
+.scratch/
+HANDOFF.md
+prototype.html

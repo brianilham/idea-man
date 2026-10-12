@@ -34,9 +34,9 @@ INSERT INTO public.ideas (
 (
     'Subreddit Pain-point Clustered Digest',
     'SaaS founders spend dozens of hours every week skimming comments across r/Entrepreneur and r/SideProject looking for unmet customer needs.',
-    'An autonomous ingestion pipeline that clusters recurring user complaints using Gemini 2.5 Flash, scores commercial viability, and generates daily actionable blueprints.',
+    'An autonomous ingestion pipeline that clusters recurring user complaints using Gemini 3.5 Flash, scores commercial viability, and generates daily actionable blueprints.',
     'Indie Hackers & Product Managers',
-    ARRAY['Python', 'Gemini 2.5 Flash', 'FastAPI'],
+    ARRAY['Python', 'Gemini 3.5 Flash', 'FastAPI'],
     'Intermediate',
     'AI Tool',
     184,

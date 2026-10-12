@@ -155,7 +155,7 @@ export function heuristicFallbackExtract(post: RedditRawPost): ExtractedIdea {
 
   // Stacks based on category
   const stacks: Record<Category, string[]> = {
-    "AI Tool": ["TypeScript", "Gemini 2.5 Flash", "Next.js"],
+    "AI Tool": ["TypeScript", "Gemini 3.5 Flash", "Next.js"],
     DevTool: ["Go / Rust", "TypeScript", "Node.js"],
     Automation: ["Python", "FastAPI", "Supabase"],
     "Web App": ["Next.js", "Tailwind CSS", "PostgreSQL"],

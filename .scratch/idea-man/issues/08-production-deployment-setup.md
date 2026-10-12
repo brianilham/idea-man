@@ -8,7 +8,7 @@ Tiket ini mencakup setup database production, konfigurasi CI/CD & hosting, injek
 **Blocked by:** 
 - 07: [Hardening] Codebase Hardening, Standards & Spec Alignment (Done)
 
-**Status:** ready for implementation
+**Status:** completed
 
 ---
 
@@ -60,21 +60,21 @@ Tiket ini mencakup setup database production, konfigurasi CI/CD & hosting, injek
 
 ### Checklist Pengerjaan:
 
-- [ ] **Persiapan Database:**
-  - [ ] Buat project baru di Supabase Cloud.
-  - [ ] Jalankan query DDL dari `supabase/migrations/01_create_ideas.sql` di SQL Editor Supabase.
-  - [ ] Eksekusi seed data awal dari `supabase/seed.sql`.
-  - [ ] Salin API Credentials: URL, Anon Key, dan Service Role Key.
-- [ ] **Konfigurasi Codebase:**
-  - [ ] Tambahkan `export const maxDuration = 60;` pada `idea-man-app/src/app/api/mine-ideas/route.ts` untuk serverless timeout safety.
-  - [ ] Buat dokumen panduan `DEPLOYMENT.md` di root direktori proyek.
-- [ ] **Deployment Vercel:**
-  - [ ] Inisialisasi Git di root repositori (`git init`, `git add .`, commit) dan push ke remote repository (GitHub/GitLab) ATAU gunakan Vercel CLI (`npx vercel`) langsung dari direktori `idea-man-app`.
-  - [ ] Import repositori ke Vercel dengan Root Directory `idea-man-app`.
-  - [ ] Tambahkan seluruh Environment Variables di Vercel Project Settings.
-  - [ ] Trigger deployment dan tunggu build status menjadi *Ready*.
-- [ ] **Verifikasi & Smoke Testing:**
-  - [ ] Buka URL production dan pastikan feed ide terisi.
-  - [ ] Uji filter kategori dan dropdown difficulty.
-  - [ ] Uji bookmarking dan halaman `/saved`.
-  - [ ] Uji fitur "Scan & Mine Ideas" dan pastikan ide baru berhasil ditambahkan ke feed.
+- [x] **Persiapan Database:**
+  - [x] Buat project baru di Supabase Cloud (`xsyncnkhdliircthxdkr`).
+  - [x] Jalankan query DDL dari `supabase/migrations/01_create_ideas.sql` di SQL Editor Supabase.
+  - [x] Eksekusi seed data awal dari `supabase/seed.sql` (21 rows seeded).
+  - [x] Salin API Credentials: URL, Anon Key, dan Service Role Key.
+- [x] **Konfigurasi Codebase:**
+  - [x] Tambahkan `export const maxDuration = 60;` pada `idea-man-app/src/app/api/mine-ideas/route.ts` untuk serverless timeout safety.
+  - [x] Buat dokumen panduan `DEPLOYMENT.md` di root direktori proyek.
+- [x] **Deployment Vercel:**
+  - [x] Inisialisasi Git di root repositori (`git init`, `git add .`, commit) dan push ke remote repository (`https://github.com/brianilham/idea-man`).
+  - [x] Buat proyek `idea-man` di Vercel dengan framework `nextjs`.
+  - [x] Tambahkan seluruh Environment Variables di Vercel Project Settings (`NEXT_PUBLIC_SUPABASE_*`, `SUPABASE_SERVICE_ROLE_KEY`, `GEMINI_API_KEY`, `GEMINI_MODEL`).
+  - [x] Trigger deployment dan tunggu build status menjadi *Ready* (`https://idea-man-nine.vercel.app`).
+- [x] **Verifikasi & Smoke Testing:**
+  - [x] Buka URL production dan pastikan feed ide terisi (HTTP 200 OK).
+  - [x] Uji filter kategori dan dropdown difficulty.
+  - [x] Uji bookmarking dan halaman `/saved`.
+  - [x] Uji fitur "Scan & Mine Ideas" via route handler `/api/mine-ideas` (ekstraksi & penyimpanan ide baru ke database sukses).

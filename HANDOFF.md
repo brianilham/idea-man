@@ -39,8 +39,8 @@ Folder kerja proyek berada di:
    - Hasil: Penghapusan kebocoran script dev `live.js`, pengamanan API key Gemini, penyelarasan default target subreddits (`r/webdev`), penataan tipe domain vs filter sentinel, pembersihan dead code (`SpotlightCarousel.tsx`), ekstraksi custom hook `useIdeasData` untuk menghilangkan duplikasi kode di 3 rute, integrasi pencarian FTS, pembersihan skema DDL Supabase dari tabel relasi akun, serta standardisasi token form radius & warna editorial.
 
 8. **Ticket 08 (Production Deployment Setup)**: [`08-production-deployment-setup.md`](./.scratch/idea-man/issues/08-production-deployment-setup.md)
-   - Status: **Ready for Implementation (Pending)**
-   - Sasaran: Setup database Supabase Cloud (eksekusi migrasi DDL `01_create_ideas.sql` dan initial seeding), integrasi CI/CD & hosting Vercel (Root Directory: `idea-man-app`), konfigurasi environment variables production (Supabase keys, Gemini API key, Reddit credentials), penyusunan panduan operasional deployment ([`DEPLOYMENT.md`](./DEPLOYMENT.md)), serta verifikasi live smoke testing.
+   - Status: **Completed (Done)**
+   - Hasil: Setup database Supabase Cloud (`ideas` table dengan 21 initial rows terverifikasi), inisialisasi Git dan publikasi remote repositori GitHub (`https://github.com/brianilham/idea-man`), konfigurasi proyek Vercel dengan environment variables lengkap, penyusunan panduan [`DEPLOYMENT.md`](./DEPLOYMENT.md), penyesuaian `maxDuration = 60` pada route handler mining, serta deployment live production sukses di Vercel: **`https://idea-man-nine.vercel.app`** (terverifikasi HTTP 200 dengan live database & route handler `/api/mine-ideas`).
 
 ## Status Keseluruhan
-Seluruh tiket implementasi fitur dan kode (Ticket 01 hingga Ticket 07) telah **Selesai (100% Completed)**. Aplikasi terverifikasi penuh dengan unit tests lolos dan production build Next.js sukses tanpa error. Proyek kini berada di tahap deployment cloud (**Ticket 08**) yang siap diimplementasikan.
+Seluruh tiket implementasi fitur dan deployment (Ticket 01 hingga Ticket 08) telah **Selesai (100% Completed)**. Aplikasi telah resmi live di production cloud dan dapat diakses publik di [`https://idea-man-nine.vercel.app`](https://idea-man-nine.vercel.app).
